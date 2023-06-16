@@ -25,7 +25,7 @@ public class TestAuthor {
         $("[data-test-id='login'] input").setValue(registeredUser.getLogin());
         $("[data-test-id='password'] input").setValue(registeredUser.getPassword());
         $("button.button").click();
-        $("h1").shouldHave(Condition.text("Личный кабинет")).shouldBe(Condition.visible);
+        $("h2").shouldHave(Condition.text("Личный кабинет")).shouldBe(Condition.visible);
     }
 
     @Test
